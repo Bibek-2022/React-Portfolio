@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import BibekShrestha from "../assets/BibekShrestha.png";
 
 export const TopNav = () => {
@@ -54,16 +55,30 @@ export const TopNav = () => {
     // </div>
     <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
-          <img src={BibekShrestha} alt="" width="100px" />
+        <Navbar.Brand>
+          <Link tp="/">
+            <img src={BibekShrestha} alt="" width="100px" />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#skills">Skills</Nav.Link>
+            {/* <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#projects">Project</Nav.Link>
             <Nav.Link href="#about">About Me</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link> */}
+            <Link to="/skills" className="nav-link">
+              Skills
+            </Link>
+            <Link to="/projects" className="nav-link">
+              Project
+            </Link>
+            <Link to="/about" className="nav-link">
+              About
+            </Link>
+            <Link to="/contact" className="nav-link">
+              Contact
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

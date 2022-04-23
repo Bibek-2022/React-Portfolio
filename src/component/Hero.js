@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { MainLayout } from "../layout/MainLayout";
 export const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero main-page" id="top-nav">
       <Container>
         <Row className="row mt-5 py-3">
           <Col md="6" className="order-md-2 text-center">
