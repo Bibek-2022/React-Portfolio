@@ -56,7 +56,7 @@ export const TopNav = () => {
     <Navbar expand="lg">
       <Container>
         <Navbar.Brand>
-          <Link tp="/">
+          <Link to="/">
             <img src={BibekShrestha} alt="" width="100px" />
           </Link>
         </Navbar.Brand>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { MainLayout } from "../layout/MainLayout";
+
 export const Hero = () => {
   return (
     <div className="hero main-page" id="top-nav">
